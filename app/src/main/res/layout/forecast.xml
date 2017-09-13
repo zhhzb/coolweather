@@ -16,11 +16,18 @@
         android:textSize="20sp"/>
 
     <LinearLayout
-        android:id="@+id/forecast_layout"
-        android:orientation="vertical"
+        android:id="@+id/hourly_forecast_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    </LinearLayout>
 
+
+    <LinearLayout
+        android:id="@+id/daily_forecast_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
     </LinearLayout>
 
 </LinearLayout>

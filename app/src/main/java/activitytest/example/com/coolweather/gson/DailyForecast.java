@@ -2,12 +2,12 @@ package activitytest.example.com.coolweather.gson;
 
 import com.google.gson.annotations.SerializedName;
 
-/**
- * Created by xiaozeng on 2017/9/8.
- */
 
-public class Forecast {
+
+public class DailyForecast {
+
     public String date;
+
     @SerializedName("tmp")
     public Temperature temperature;
 
@@ -15,11 +15,17 @@ public class Forecast {
     public More more;
 
     public class Temperature{
+
         public String max;
+
         public String min;
+
     }
+
     public class More{
+
         @SerializedName("txt_d")
         public String info;
+
     }
 }
